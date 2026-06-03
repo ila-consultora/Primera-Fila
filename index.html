@@ -11,14 +11,14 @@
 
   <style>
     :root {
-      --black: #040404;
+      --black: #11264B;
       --cream: #f2ece6;
-      --paper: #ece6df;
+      --paper: #11264B;
       --red: #d92f3f;
       --line: rgba(255,255,255,0.08);
       --line-dark: rgba(0,0,0,0.08);
       --muted: rgba(242,236,230,0.58);
-      --muted-dark: rgba(0,0,0,0.48);
+      --muted-dark: rgba(255,255,255,0.65);
       --serif: 'Playfair Display', serif;
       --sans: 'Inter', sans-serif;
     }
@@ -155,7 +155,7 @@
       display: flex;
       align-items: flex-end;
       overflow: hidden;
-      background: #030303;
+      background: #11264B;
     }
 
     .hero::before {
@@ -164,10 +164,10 @@
       inset: -6%;
       background:
         linear-gradient(90deg,
-        rgba(3,3,3,1) 0%,
-        rgba(3,3,3,0.94) 28%,
-        rgba(3,3,3,0.18) 60%,
-        rgba(3,3,3,0.9) 100%),
+        rgba(17,38,75,1) 0%,
+        rgba(17,38,75,0.94) 28%,
+        rgba(17,38,75,0.18) 60%,
+        rgba(17,38,75,0.90) 100%),
         url('./butaca.png');
       background-size: cover;
       background-position: center right;
@@ -399,7 +399,7 @@
       display: grid;
       place-items: center;
       background: var(--paper);
-      color: #050505;
+      color: #FFFFFF;
       padding: 130px 42px;
       overflow: hidden;
       border-top: 1px solid rgba(255,255,255,0.06);
@@ -410,7 +410,7 @@
       position: absolute;
       inset: 0;
       background:
-        linear-gradient(90deg, rgba(5,5,5,0.03), transparent 42%, rgba(0,0,0,0.02));
+        linear-gradient(90deg, rgba(255,255,255,0.04), transparent 42%, rgba(255,255,255,0.02));
       opacity: 1;
     }
 
@@ -435,12 +435,12 @@
 
     .section-light {
       background: var(--paper);
-      color: black;
+      color: #FFFFFF;
       padding: 140px 42px;
     }
 
     .section-dark {
-      background: #050505;
+      background: #11264B;
       color: var(--cream);
       padding: 140px 42px;
     }
@@ -476,20 +476,20 @@
 
     .card {
       padding: 48px;
-      border: 1px solid rgba(0,0,0,0.08);
-      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.08);
       backdrop-filter: blur(10px);
       transition: transform 0.35s ease, background 0.35s ease;
     }
 
     .card:hover {
       transform: translateX(12px);
-      background: rgba(255,255,255,0.26);
-      box-shadow: 0 30px 80px rgba(0,0,0,0.06);
+      background: rgba(255,255,255,0.14);
+      box-shadow: 0 30px 80px rgba(0,0,0,0.18);
     }
 
     .card p {
-      color: rgba(0,0,0,0.48);
+      color: rgba(255,255,255,0.85);
       font-size: 19px;
       line-height: 1.8;
     }
@@ -497,7 +497,7 @@
     .card strong {
       display: block;
       margin: 22px 0;
-      color: black;
+      color: #FFFFFF;
       font-size: 19px;
       line-height: 1.7;
     }
@@ -683,7 +683,7 @@
       justify-content: center;
       text-align: center;
       background:
-      linear-gradient(rgba(0,0,0,0.82), rgba(0,0,0,0.9)),
+      linear-gradient(rgba(17,38,75,0.82), rgba(17,38,75,0.92)),
       url('./butaca.png');
       background-size: cover;
       background-position: center;
@@ -1282,7 +1282,7 @@
 
     <div class="final-footer">
       <div>
-        <img src="./logo-ila.png" alt="ILA" class="final-logo">
+        <img src="./Logo ILA.png" alt="ILA" class="final-logo">
       </div>
       <div>
         Primera Fila · 17 Junio 2026 · Teatro Vicente Bianchi · Corporación Cultural de La Reina · Santiago

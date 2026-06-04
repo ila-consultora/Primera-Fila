@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -269,8 +269,8 @@
       max-width: 100%;
       padding: 18px 0 16px;
       border: 0;
-      border-top: 1px solid rgba(242,236,230,0.28);
-      border-bottom: 1px solid rgba(217,47,63,0.58);
+      border-top: 0;
+      border-bottom: 0;
       border-radius: 0;
       background: transparent;
       color: #FFFFFF;
@@ -294,18 +294,6 @@
       vertical-align: 0.08em;
     }
 
-    .event-highlight::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -1px;
-      width: 92px;
-      height: 1px;
-      background: var(--red);
-      box-shadow: 0 0 18px rgba(217,47,63,0.42);
-      pointer-events: none;
-    }
-
     .venue-highlight {
       position: relative;
       font-family: var(--sans);
@@ -314,7 +302,7 @@
       max-width: 1240px;
       padding: 0 0 18px 0;
       border: 0;
-      border-bottom: 1px solid rgba(242,236,230,0.2);
+      border-bottom: 0;
       border-radius: 0;
       background: transparent;
       color: rgba(242,236,230,0.88);
@@ -325,17 +313,6 @@
       text-shadow: 0 12px 36px rgba(0,0,0,0.34);
     }
 
-    .venue-highlight::before {
-      content: '';
-      display: inline-block;
-      width: 42px;
-      height: 1px;
-      margin-right: 14px;
-      background: var(--red);
-      vertical-align: middle;
-      opacity: 0.9;
-    }
-
     .final-event-info {
       position: relative;
       display: grid;
@@ -343,37 +320,18 @@
       gap: 18px;
       max-width: 980px;
       margin: 44px auto 0;
-      padding: 30px 0 24px;
-      border-top: 1px solid rgba(242,236,230,0.18);
-      border-bottom: 1px solid rgba(242,236,230,0.18);
-      border-left: 0;
-      border-right: 0;
+      padding: 18px 0 10px;
+      border: 0;
       border-radius: 0;
       background: transparent;
       box-shadow: none;
       backdrop-filter: none;
     }
 
-    .final-event-info::before {
-      content: 'Datos del evento';
-      font-family: var(--sans);
-      color: var(--red);
-      font-size: 10px;
-      font-weight: 900;
-      letter-spacing: 0.34em;
-      text-transform: uppercase;
-      margin-bottom: 2px;
-    }
-
     .final-event-info .event-highlight {
       justify-content: center;
       margin-bottom: 0;
       text-align: center;
-    }
-
-    .final-event-info .event-highlight::after {
-      left: 50%;
-      transform: translateX(-50%);
     }
 
     .final-event-info .venue-highlight {
@@ -917,12 +875,7 @@
     }
 
     .final-line {
-      position: absolute;
-      left: 42px;
-      right: 42px;
-      bottom: 92px;
-      height: 1px;
-      background: rgba(255,255,255,0.08);
+      display: none;
     }
 
     .final-logo {
@@ -1046,12 +999,6 @@
         margin-right: 9px;
       }
 
-      .event-highlight::after {
-        left: 50%;
-        width: 64px;
-        transform: translateX(-50%);
-      }
-
       .venue-highlight {
         width: 100%;
         padding: 0 0 14px 0;
@@ -1061,22 +1008,10 @@
         text-align: center;
       }
 
-      .venue-highlight::before {
-        width: 28px;
-        margin-right: 9px;
-      }
-
       .final-event-info {
         margin-top: 34px;
         gap: 14px;
-        padding: 26px 0 20px;
-      }
-
-      .final-event-info::before {
-        width: max-content;
-        max-width: 100%;
-        font-size: 9px;
-        letter-spacing: 0.2em;
+        padding: 16px 0 8px;
       }
 
       .footer-event-info {
@@ -1293,12 +1228,6 @@
         max-width: 390px;
         margin-left: auto;
         margin-right: auto;
-      }
-
-      .final-line {
-        left: 20px;
-        right: 20px;
-        bottom: 104px;
       }
 
       .final-footer {

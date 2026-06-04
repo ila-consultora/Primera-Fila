@@ -299,6 +299,11 @@
       animation: redBreath 5.8s ease-in-out infinite;
     }
 
+    .hero-left .title-script {
+      margin-top: 26px;
+      max-width: 760px;
+    }
+
     @keyframes redBreath {
       0%, 100% { filter: brightness(1); }
       50% { filter: brightness(1.16); }
@@ -339,6 +344,15 @@
     .button:hover {
       transform: translateY(-4px);
       background: #ef3446;
+    }
+
+    .button-primary {
+      min-width: 360px;
+      box-shadow: 0 18px 45px rgba(217,47,63,0.32);
+    }
+
+    .button-primary:hover {
+      box-shadow: 0 24px 60px rgba(217,47,63,0.42);
     }
 
     .scroll-cue {
@@ -1068,7 +1082,7 @@
   <section class="hero">
     <div class="soft-glow" style="right:12%; bottom:16%;"></div>
     <div class="hero-content reveal">
-      <div class="pill">Evento exclusivo · Santiago</div>
+      <div class="pill">Evento exclusivo · Santiago · 17 de junio · 19:00 hrs</div>
 
       <div class="eyebrow hero-eyebrow">
         Experiencia not teambuilding · Teatro Vicente Bianchi · Corporación Cultural de La Reina
@@ -1080,18 +1094,17 @@
             Primera<br>
             Fila.
           </h1>
+
+          <div class="title-script">Tu equipo en escena.</div>
         </div>
 
         <div class="hero-right">
-          <div class="title-script">Tu equipo en escena.</div>
-
           <p class="hero-description">
             Lo que pasa en escena, ya pasó en tu equipo.
           </p>
 
           <div class="hero-actions">
-            <a href="https://forms.gle/1scGHMXr8Q4tzvq8A" target="_blank" class="button">Solicitar inscripción</a>
-            <a href="#frase" class="button secondary">Descubrir experiencia</a>
+            <a href="https://forms.gle/1scGHMXr8Q4tzvq8A" target="_blank" class="button button-primary">Solicitar inscripción</a>
           </div>
         </div>
       </div>
@@ -1268,7 +1281,7 @@
       <p class="final-copy">
         Las inscripciones están sujetas a confirmación por parte de ILA.
         <br>
-        Ven con tu equipo o invita a alguien que le haga sentido.
+        Máximo 4 personas por empresa. Recibirás respuesta en 48 horas hábiles.
       </p>
 
       <a href="https://forms.gle/1scGHMXr8Q4tzvq8A" target="_blank" class="button">Solicitar inscripción</a>
@@ -1282,7 +1295,7 @@
 
     <div class="final-footer">
       <div>
-        <img src="./Logo ILA.png" alt="ILA" class="final-logo">
+        <img src="./logo-ila.png" alt="ILA" class="final-logo">
       </div>
       <div>
         Primera Fila · 17 Junio 2026 · Teatro Vicente Bianchi · Corporación Cultural de La Reina · Santiago
